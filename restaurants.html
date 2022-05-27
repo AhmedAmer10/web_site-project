@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {margin:0;}
+
+ul.NAV {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width:100%;
+  border-radius: 10px;
+  border: 2px solid #73AD2;
+
+}
+
+li.NAV,li.name{
+  float: left;
+}
+
+li.NAV a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-right:1px solid gray;
+  border-radius: 10px;
+}
+
+li.NAV a:hover{
+  background-color: #111;
+}
+
+.active {
+  background-color:gray;
+}
+.footer{
+  padding:20px;
+  font-size:4vw;
+  color:red;
+  height:100PX;
+}
+li.name{
+  display:block;
+  margin-right: 50px;
+  margin-left:50px;
+  margin-top: 10px;
+  font-size:40px;
+  font-family:serif;
+  color:#FF005C;
+
+
+}
+ul.NAV2 {
+  list-style-type: none;
+  padding:5px;
+  overflow: hidden;
+  width: 100%;
+
+
+}
+
+li.NAV2{
+  float: left;
+  width:40%;
+  margin-left:10%;
+}
+
+li.NAV2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-right:110px;
+  border:1px solid gray;
+  background-color: #333;
+  border-radius: 10px;
+  border: 2px solid #73AD2;
+
+
+}
+
+li.NAV2 a:hover{
+  background-color: #111;
+}
+div #home_img{
+  width:100%;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+
+}
+
+.column1 {
+  float: left;
+  width: 23%;
+  padding: 10px;
+  height: 1230px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px grey;
+  margin-right:10px;
+  margin-left:10px;
+}
+.column2 {
+  float: left;
+  width: 75%;
+  padding: 10px;
+  height:1230px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px grey;
+
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+.text{
+text-align: center;
+font-size:20px;
+}
+
+h1.title {
+  display:inline-block;
+  text-align:center;
+  border-radius: 10px;
+  border: 2px solid #D7E1E9;
+  margin-left:50%;
+  padding:3px;
+}
+
+
+.text_head{
+  text-align:center;
+  font-size:30px;
+}
+.restaurants_image{
+    width:100%;
+  border-radius: 8px;
+  height:300px;
+
+}
+.content{
+  font-size:20px;
+}
+.VEDIO{
+  width:100%;
+  height:270px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.VEDIO2{
+  width:100%;
+  height:600px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top:20px;
+}
+table{
+  height:700px;
+  border-radius:10px;
+
+
+}
+table, th, td {
+  width:100%;
+  border: 1px lightlygray;
+  text-align:center;
+  font-size:20px;
+  color:red;
+}
+ tr:nth-child(odd) {
+  background-color: #E6E7E8;
+}
+
+th{
+  background-color:#BCBEC0;
+  color:black;
+}
+div.gallery {
+  margin: 10px;
+  float: left;
+  width:31%;
+
+
+
+}
+
+div.gallery:hover {
+  border: 1px lightly gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px grey;
+
+
+
+}
+
+div.gallery img {
+  width:100%;
+  height:250px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1510px) and (min-width:1000px) {
+  .NAV li,.name{
+    float:left;
+    width: 50%;
+
+  }
+  .NAV2 li{
+    float:left;
+    width: 40%;
+
+  }
+
+  li.NAV{
+    float: left;
+  }
+  .header{
+    font-size: 20px;
+  }
+  .responsive{
+  margin-top:214px;
+ }
+ li.name{
+   font-size:30px;
+ }
+ .column1{
+   width:20%;
+   margin-left:10px;
+  height:950px;
+ }
+ .column2{
+   width:75%;
+   margin-left:0px;
+   height:950px;
+ }
+ ul.NAV2{
+   margin-left:0PX;
+ }
+
+ div.gallery {
+   margin: 10px;
+   float: left;
+   width:29%;
+ }
+
+ div.gallery img {
+   width:100%;
+   height:200px;
+   border: 1px solid black;
+   border-radius: 10px;
+ }
+ .VEDIO{
+   width:100%;
+   height:150px;
+   border: 1px solid black;
+   border-radius: 10px;
+ }
+ .VEDIO2{
+   width:100%;
+   height:370px;
+   border: 1px solid black;
+   border-radius: 10px;
+   margin-top:20px;
+ }
+ table{
+   height:200px;
+   border-radius:10px;
+}
+h1.title{  margin-left:25%;}
+
+
+}
+
+@media screen and (max-width:1000px) and (min-width: 0px) {
+  .NAV li,.name{
+    float:left;
+    width: 50%;
+
+  }
+  .NAV2 li{
+    float:left;
+    width: 40%;
+
+  }
+  ul.NAV2{
+    margin-left: 0;
+  }
+  li.NAV{
+    float: left;
+  }
+  li.NAV2 a{
+    float:left;
+     width:100%;
+
+  }
+  .header{
+    font-size: 20px;
+  }
+  .responsive{
+  margin-top:214px;
+ }
+ li.name{
+   font-size:30px;
+ }
+ .column1{
+   width:100%;
+   margin-left:0px;
+float:none;
+height:800px;
+
+ }
+ .column2{
+   width:100%;
+   margin-left:0px;
+   height:800px;
+
+ }
+
+
+ div.gallery {
+   margin: 10px;
+   float: left;
+   width:28%;
+ }
+
+ div.gallery img {
+   width:100%;
+   height:200px;
+   border: 1px solid black;
+   border-radius: 10px;
+ }
+ .VEDIO{
+   width:100%;
+   height:170px;
+   border: 1px solid black;
+   border-radius: 10px;
+ }
+ .VEDIO2{
+   width:100%;
+   height:200px;
+   border: 1px solid black;
+   border-radius: 10px;
+   margin-top:20px;
+ }
+ table{
+   height:150px;
+   border-radius:10px;
+ }
+ td{
+   font-size:15px;
+
+ }
+ h1.title{
+   margin-left:25%;
+ }
+
+
+}
+
+</style>
+</head>
+<body>
+
+<ul class="NAV">
+  <li class="name">THE TASTER</li>
+  <li class="NAV"><a href="index.html">Home</a></li>
+  <li class="NAV"><a href="registration.html">REGISTRATION</a></li>
+  <li class="NAV"><a href="recipes.html">RECIPES</a></li>
+  <li class="NAV"><a href="channels.html">CHANNELS</a></li>
+  <li class="NAV"><a class="active" href="restaurants.html">RESTAURANTS</a></li>
+</ul>
+<div class="responsive">
+<div>
+  <img id="home_img" src="restaurants/home img.jpg">
+</div>
+
+
+<div class="header">
+  <p>FAMOUS RESTAURANTS</p>
+  <div class="NAV2">
+    <ul class="NAV2">
+      <li class="NAV2"><a href="#LOCAL">LOCAL</a></li>
+      <li class="NAV2"><a href="#GLOBAL">GLOBAL</a></li>
+
+    </ul>
+  </div>
+
+</div>
+<h1 class="title" id="LOCAL">LOCAL</h1>
+<hr>
+<h1 class="title">SOPHI KABER</h1>
+
+<div class="row">
+  <div class="column1" style="background-color:#F2F8FD;">
+          <div class="text_head">
+             <p>"MENUE "</p>  <hr>
+          </div>
+            <table>
+  <tr>
+    <th>DISH</th>
+    <th>PRICE</th>
+  </tr>
+  <tr>
+    <td>1/4 Kofta</td>
+    <td>43.89 EGP</td>
+  </tr>
+  <tr>
+    <td>1/2 Chicken Tikka</td>
+    <td>42.18 EGP</td>
+  </tr>
+  <tr>
+    <td>1/2 Charcoal Chicken Shish</td>
+    <td>42.18 EGP</td>
+  </tr>
+  <tr>
+    <td>1/4 Kofta & Tarb</td>
+    <td>47.31 EGP</td>
+  </tr>
+  <tr>
+    <td>Stuffed Pigeon with Rice</td>
+    <td>54.72 EGP</td>
+  </tr>
+  <tr>
+    <td>Mouza</td>
+    <td>126.54 EGP</td>
+  </tr>
+  <tr>
+    <td>Charcoal Hawawshi</td>
+    <td>23.94 EGP</td>
+  </tr>
+  <tr>
+    <td>1/4 Tarb</td>
+    <td>49.59 EGP</td>
+  </tr>
+  <tr>
+    <td>Plain Molokheya</td>
+    <td>25.08 EGP</td>
+  </tr>
+</table>
+ <hr>
+<div class="text_head">
+   <p>"REVIEW"</p>  <hr>
+</div>
+<iframe class="VEDIO" src="https://www.youtube.com/embed/bkWWt97rIFQ" allowfullscreen></iframe>
+
+  </div>
+
+
+  <div class="column2" style="background-color:#F2F8FD;">
+            <div class="content">
+             <img class="restaurants_image" src="restaurants/sophi kaper.jpg" >
+
+<div class="gallery">
+  <a target="_blank" href="restaurants/sophi_gallery1.jpg">
+    <img src="restaurants/sophi_gallery1.jpg" >
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="restaurants/sophi_gallery2.jpg">
+    <img src="restaurants/sophi_gallery2.jpg">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="restaurants/sophi_gallery3.jfif">
+    <img src="restaurants/sophi_gallery3.jfif">
+  </a>
+</div>
+
+
+<iframe  class="VEDIO2"src="https://www.youtube.com/embed/Lj7oa_xsK70" allowfullscreen></iframe>
+
+          </div>
+
+ </div>
+
+</div>
+<br><br>
+<h1 class="title">ELPRINCE</h1>
+
+<div class="row">
+  <div class="column1" style="background-color:#F2F8FD;">
+          <div class="text_head">
+             <p>"MENUE "</p>  <hr>
+          </div>
+            <table>
+  <tr>
+    <th>DISH</th>
+    <th>PRICE</th>
+  </tr>
+  <tr>
+    <td>1/4 Kofta</td>
+    <td>43.89 EGP</td>
+  </tr>
+  <tr>
+    <td>1/2 Chicken Tikka</td>
+    <td>42.18 EGP</td>
+  </tr>
+  <tr>
+    <td>1/2 Charcoal Chicken Shish</td>
+    <td>42.18 EGP</td>
+  </tr>
+  <tr>
+    <td>1/4 Kofta & Tarb</td>
+    <td>47.31 EGP</td>
+  </tr>
+  <tr>
+    <td>Stuffed Pigeon with Rice</td>
+    <td>54.72 EGP</td>
+  </tr>
+  <tr>
+    <td>Mouza</td>
+    <td>126.54 EGP</td>
+  </tr>
+  <tr>
+    <td>Charcoal Hawawshi</td>
+    <td>23.94 EGP</td>
+  </tr>
+  <tr>
+    <td>1/4 Tarb</td>
+    <td>49.59 EGP</td>
+  </tr>
+  <tr>
+    <td>Plain Molokheya</td>
+    <td>25.08 EGP</td>
+  </tr>
+</table>
+ <hr>
+<div class="text_head">
+   <p>"REVIEW"</p>  <hr>
+</div>
+<iframe class="VEDIO" src="https://www.youtube.com/embed/Z6Mi0ecd7vg"  allowfullscreen></iframe>
+
+  </div>
+
+
+  <div class="column2" style="background-color:#F2F8FD;">
+            <div class="content">
+             <img class="restaurants_image" src="restaurants/elprince.jfif" >
+
+             <div class="gallery">
+  <a target="_blank" href="restaurants/elprins_gallery1.jpg">
+    <img src="restaurants/elprins_gallery1.jpg" >
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="restaurants/elprins_gallery2.jpg">
+    <img src="restaurants/elprins_gallery2.jpg"  >
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="restaurants/elprins_gallery3.jpg">
+    <img src="restaurants/elprins_gallery3.jpg" >
+  </a>
+</div>
+<iframe class="VEDIO2" src="https://www.youtube.com/embed/8eLs5xDAGXM" allowfullscreen></iframe>
+
+          </div>
+
+
+ </div> 
+
+</div>
+<br><br>
+<h1 class="title" id="GLOBAL">GLOBAL</h1>
+<hr>
+<h1 class="title">ALBAIK</h1>
+
+
+
+<div class="row">
+  <div class="column1" style="background-color:#F2F8FD;">
+          <div class="text_head">
+             <p>"MENUE "</p>  <hr>
+          </div>
+            <table>
+  <tr>
+    <th>DISH</th>
+    <th>PRICE</th>
+  </tr>
+  <tr>
+    <td>ALBAIK 4 Piece Chicken Meal</td>
+    <td>SR 12</td>
+  </tr>
+  <tr>
+    <td>ALBAIK 8 Piece Chicken Meal</td>
+    <td>SR 23</td>
+  </tr>
+  <tr>
+    <td>7 Piece Chicken</td>
+    <td>SR 9</td>
+  </tr>
+  <tr>
+    <td>Value Shrimp Meal</td>
+    <td>SR 18</td>
+  </tr>
+  <tr>
+    <td>Fish Fillet Meal</td>
+    <td>SR 14</td>
+  </tr>
+  <tr>
+    <td>Hommos</td>
+    <td>SR 3</td>
+  </tr>
+  <tr>
+    <td>Coleslaw Salad</td>
+    <td>SR 3</td>
+  </tr>
+  <tr>
+    <td>French Fries</td>
+    <td>SR 3</td>
+  </tr>
+  <tr>
+    <td>Fries w/Garlic sauce</td>
+    <td>SR 4</td>
+  </tr>
+</table>
+ <hr>
+<div class="text_head">
+   <p>"REVIEW"</p>  <hr>
+</div>
+<iframe class="VEDIO" src="https://www.youtube.com/embed/vbtePA6m7PY" allowfullscreen></iframe>
+
+  </div>
+
+
+  <div class="column2" style="background-color:#F2F8FD;">
+            <div class="content">
+             <img class="restaurants_image" src="restaurants/albaik.png" >
+
+             <div class="gallery">
+  <a target="_blank" href="restaurants/albaik_gallery1.jpg">
+    <img src="restaurants/albaik_gallery1.jpg" alt="Cinque Terre" >
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="restaurants/albaik_gallery2.jpg">
+    <img src="restaurants/albaik_gallery2.jpg">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="restaurants/albaik_gallery3.jpeg">
+    <img src="restaurants/albaik_gallery3.jpeg" >
+  </a>
+</div>
+<iframe class="VEDIO2" src="https://www.youtube.com/embed/6-FHDS_o_p8" allowfullscreen></iframe> 
+
+          </div>
+
+
+ </div>
+
+</div>
+<br><br>
+
+<h1 class="title">FIVE GUYS</h1>
+
+<div class="row">
+  <div class="column1" style="background-color:#F2F8FD;">
+          <div class="text_head">
+             <p>"MENUE "</p>  <hr>
+          </div>
+            <table>
+  <tr>
+    <th>DISH</th>
+    <th>PRICE</th>
+  </tr>
+  <tr>
+    <td> 4 Piece Chicken Meal</td>
+    <td>SR 35</td>
+  </tr>
+  <tr>
+    <td> 8 Piece Chicken Meal</td>
+    <td>SR 30</td>
+  </tr>
+  <tr>
+    <td>7 Piece Chicken Nuggets Meal</td>
+    <td>SR 9</td>
+  </tr>
+  <tr>
+    <td>Value Shrimp Meal</td>
+    <td>SR 40</td>
+  </tr>
+  <tr>
+    <td>Fish Fillet Meal</td>
+    <td>SR 20</td>
+  </tr>
+  <tr>
+    <td>Hommos</td>
+    <td>SR 7</td>
+  </tr>
+  <tr>
+    <td>Coleslaw Salad</td>
+    <td>SR 8</td>
+  </tr>
+  <tr>
+    <td>French Fries</td>
+    <td>SR 5</td>
+  </tr>
+  <tr>
+    <td>Fries w/Garlic sauce</td>
+    <td>SR 4</td>
+  </tr>
+</table>
+ <hr>
+<div class="text_head">
+   <p>"REVIEW"</p>  <hr>
+</div>
+<iframe class="VEDIO" src="https://www.youtube.com/embed/ok6lGvpzP7o" allowfullscreen></iframe>
+
+  </div>
+
+
+  <div class="column2" style="background-color:#F2F8FD;">
+            <div class="content">
+             <img class="restaurants_image" src="restaurants/five guys.jpg" >
+
+             <div class="gallery">
+  <a target="_blank" href="restaurants/five guys_gallery1.jpg"">
+    <img src="restaurants/five guys_gallery1.jpg">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="restaurants/five guys_gallery2.jfif">
+    <img src="restaurants/five guys_gallery2.jfif">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="restaurants/five guys_gallery3.jpg">
+    <img src="restaurants/five guys_gallery3.jpg"  >
+  </a>
+</div>
+<iframe class="VEDIO2" src="https://www.youtube.com/embed/7myx3KTwY6U"allowfullscreen></iframe>
+
+    </div>
+
+
+ </div>
+
+</div>
+<br><br>
+
+<hr>
+
+</div>
+<div class="footer">BON APPETIT !!</div>
+</div>
+
+
+</body>
+
+</html>

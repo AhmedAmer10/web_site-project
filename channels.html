@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {margin:0;}
+
+ul.NAV {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width:100%;
+  border-radius: 10px;
+  border: 2px solid #73AD2;
+
+}
+
+li.NAV,li.name{
+  float: left;
+}
+
+li.NAV a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-right:1px solid gray;
+  border-radius: 10px;
+}
+
+li.NAV a:hover{
+  background-color: #111;
+}
+
+.active {
+  background-color:gray;
+}
+li.name{
+  display:block;
+  margin-right: 50px;
+  margin-left:50px;
+  margin-top: 10px;
+  font-size:40px;
+  font-family:serif;
+  color:#FF005C;
+
+
+}
+.footer{
+  padding:20px;
+  font-size:4vw;
+  color:red;
+  height:100PX;
+}
+ul.NAV2 {
+  list-style-type: none;
+  padding:5px;
+  overflow: hidden;
+  width: 90%;
+
+
+}
+
+li.NAV2{
+  float: left;
+  width:40%;
+  margin-left:10%;
+}
+
+li.NAV2 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding:14px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-right:110px;
+  border:1px solid gray;
+  background-color: #333;
+  border-radius: 10px;
+  border: 2px solid #73AD2;
+
+
+}
+
+li.NAV2 a:hover{
+  background-color: #111;
+}
+div #home_img{
+  width:100%;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+
+}
+
+.column1 {
+  float: left;
+  width: 23%;
+  padding: 10px;
+  height: 900px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px grey;
+  margin-right:10px;
+  margin-left:10px;
+}
+.column2 {
+  float: left;
+  width: 75%;
+  padding: 10px;
+  height:900px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px grey;
+
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+.text{
+text-align: center;
+font-size:20px;
+}
+
+h1.title {
+  display:inline-block;
+  text-align:center;
+  border-radius: 10px;
+  border: 2px solid #D7E1E9;
+  margin-left:50%;
+  padding:3px;
+}
+
+
+.text_head{
+  text-align:center;
+  font-size:30px;
+}
+.channel_image{
+    width:100%;
+  border-radius: 8px;
+  height:300px;
+
+}
+.content{
+  font-size:20px;
+}
+.VEDIO{
+  width:100%;
+  height:570px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+table{
+  height:700px;
+
+}
+table, th, td {
+  width:100%;
+  text-align:center;
+  font-size:20px;
+  color:red;
+}
+ tr:nth-child(odd) {
+  background-color: #E6E7E8;
+}
+
+th{
+  background-color:#BCBEC0;
+
+}
+
+@media screen and (max-width: 1510px) and (min-width:1000px) {
+  .NAV li,.name{
+    float:left;
+    width: 50%;
+
+  }
+  .NAV2 li{
+    float:left;
+    width: 40%;
+
+  }
+  li.NAV{
+    float: left;
+  }
+  .header{
+    font-size: 20px;
+  }
+  .responsive{
+  margin-top:214px;
+ }
+ li.name{
+   font-size:30px;
+ }
+ .column1{
+   width:20%;
+   margin-left:10px;
+  height:800px;
+ }
+ .column2{
+   width:75%;
+   margin-left:0px;
+   height:800px;
+ }
+ ul.NAV2{
+   margin-left:50PX;
+ }
+ table{
+   height:600px;
+
+ }
+ .VEDIO{
+   width:100%;
+   height:470px;
+   border: 1px solid black;
+   border-radius: 10px;
+ }
+ h1.title{  margin-left:25%;}
+
+
+}
+
+
+
+@media screen and (max-width:1000px) and (min-width: 0px) {
+  .NAV li,.name{
+    float:left;
+    width: 50%;
+
+  }
+  .NAV2 li{
+    float:left;
+    width: 40%;
+
+  }
+
+  ul.NAV2{
+    margin-left: 0;
+  }
+  li.NAV{
+    float: left;
+  }
+  li.NAV2 a{
+    float:left;
+     width:100%;
+
+  }
+  .header{
+    font-size: 20px;
+  }
+  .responsive{
+  margin-top:214px;
+ }
+ li.name{
+   font-size:30px;
+ }
+ .column1{
+   width:100%;
+   margin-left:0px;
+float:none;
+height:800px;
+
+ }
+ .column2{
+   width:100%;
+   margin-left:0px;
+   height:800px;
+
+ }
+
+ h1.title{
+   margin-left:25%;
+
+ }
+ .VEDIO{
+
+   height:470px;
+
+ }
+ td{
+   font-size:15px;
+
+ }
+ h1.title{  margin-left:25%;}
+
+
+
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<ul class="NAV">
+  <li class="name">THE TASTER</li>
+  <li class="NAV"><a href="index.html">Home</a></li>
+  <li class="NAV"><a href="registration.html">REGISTRATION</a></li>
+  <li class="NAV"><a href="recipes.html">RECIPES</a></li>
+  <li class="NAV"><a class="active" href="channels.html">CHANNELS</a></li>
+  <li class="NAV"><a href="restaurants.html">RESTAURANTS</a></li>
+</ul>
+<div class="responsive">
+<div>
+  <img id="home_img" src="channels/channel img.jpg">
+</div>
+
+
+<div class="header">
+  <p>CHANNELS</p>
+  <div class="NAV2">
+    <ul class="NAV2">
+      <li class="NAV2"><a href="#ARABIC">ARABIC</a></li>
+      <li class="NAV2"><a href="#ENGLISH">ENGLISH</a></li>
+
+    </ul>
+  </div>
+
+</div>
+
+<h1 class="title" id="ARABIC">ARABIC</h1>
+<hr>
+<h1 class="title">CBC SOFRA</h1>
+
+<div class="row">
+  <div class="column1" style="background-color:#F2F8FD;">
+          <div class="text_head">
+             <p>"TIME TABLE "</p>  <hr>
+          </div>
+            <table>
+  <tr>
+    <th>Program</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td>زعفران وفانيلا</td>
+    <td>4:30AM</td>
+  </tr>
+  <tr>
+    <td>من كل حته في مصر</td>
+    <td>4:45AM</td>
+  </tr>
+  <tr>
+    <td>طبخة ونص</td>
+    <td>5:30AM</td>
+  </tr>
+  <tr>
+    <td> أميرة في المطبخ</td>
+    <td>6:00AM</td>
+  </tr>
+  <tr>
+    <td>على قد الإيد</td>
+    <td>8:00AM</td>
+  </tr>
+  <tr>
+    <td>اتفضلوا عندنا</td>
+    <td>10:00AM</td>
+  </tr>
+  <tr>
+    <td>الشيف</td>
+    <td>11:00AM</td>
+  </tr>
+  <tr>
+    <td>زي السكر</td>
+    <td>12:30PM</td>
+  </tr>
+  <tr>
+    <td>أميرة في المطبخ</td>
+    <td>1:00PM</td>
+  </tr>
+</table>
+
+  </div>
+
+
+  <div class="column2" style="background-color:#F2F8FD;">
+            <div class="content">
+            <img class="channel_image" src="channels/cbc sofra.jpg" >
+            <iframe class="VEDIO" src="https://www.youtube.com/embed/aOxcnFXgTkI"  allowfullscreen></iframe>
+
+          </div>
+</div>
+
+</div>
+<br><br>
+
+
+<h1 class="title" id="ENGLISH">ENGLISH</h1>
+<hr>
+<h1 class="title">FOOD KITCHEN</h1>
+
+
+
+<div class="row">
+  <div class="column1" style="background-color:#F2F8FD;">
+          <div class="text_head">
+             <p>"TIME TABLE "</p>  <hr>
+          </div>
+            <table>
+              <tr>
+                <th>Program</th>
+                <th>Time</th>
+              </tr>
+              <tr>
+                <td>Barefoot Contessa: Cook Like a Pro</td>
+                <td>7:00AM</td>
+              </tr>
+              <tr>
+                <td>Brunch @ Bobby's</td>
+                <td>7:30AM</td>
+              </tr>
+              <tr>
+                <td>Giada Entertains</td>
+                <td>8:00AM</td>
+              </tr>
+              <tr>
+                <td> Valerie's Home Cooking</td>
+                <td>8:30AM</td>
+              </tr>
+              <tr>
+                <td>The Pioneer Woman</td>
+                <td>9:00AM</td>
+              </tr>
+              <tr>
+                <td>Valerie's Home Cooking</td>
+                <td>11:30AM</td>
+              </tr>
+              <tr>
+                <td>Delicious Miss Brown</td>
+                <td>12:00PM</td>
+              </tr>
+              <tr>
+                <td>Guy's Ranch Kitchen</td>
+                <td>12:30PM</td>
+              </tr>
+              <tr>
+                <td>The Kitchen</td>
+                <td>1:00PM</td>
+              </tr>
+</table>
+
+  </div>
+
+
+  <div class="column2" style="background-color:#F2F8FD;">
+            <div class="content">
+             <img class="channel_image" src="channels/Food-Network-Kitchne.jpg" >
+             <iframe class="VEDIO" src="https://www.youtube.com/embed/148ESmalHI0" title="YouTube video player" allowfullscreen></iframe>
+
+          </div>
+ </div>
+
+</div>
+<br><br>
+<hr>
+</div>
+
+<div class="footer">BON APPETIT !!</div>
+
+</div>
+
+</body>
+
+</html>

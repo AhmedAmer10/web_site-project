@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    background-image: url('regestration/Designs-Wallpapers.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+
+  }
+* {
+  box-sizing: border-box;
+}
+ul.NAV {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width:100%;
+  border-radius: 10px;
+  border: 2px solid #73AD2;
+
+}
+
+li.NAV,li.name{
+  float: left;
+}
+
+li.NAV a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-right:1px solid gray;
+  border-radius: 10px;
+}
+
+li.NAV a:hover{
+  background-color: #111;
+}
+
+.active {
+  background-color:gray;
+}
+li.name{
+  display:block;
+  margin-right: 50px;
+  margin-left:50px;
+  margin-top: 10px;
+  font-size:40px;
+  font-family:serif;
+  color:#FF005C;
+
+
+}
+
+input  {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+ font-size: 20px;
+}
+input {
+  opacity:.7;
+}
+
+input[type=submit] {
+  color:black;
+  background-color: gray;
+  font-size:20px;
+
+}
+
+input[type=submit]:hover {
+opacity:1;
+
+}
+
+.data {
+  position:absolute;
+  top:25%;
+  left:25%;
+  width:50%;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: -1;
+
+}
+
+.col1 {
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+  color:black;
+  background-color:#F2F8FD;
+  border-radius: 10px;
+  text-align: center;
+  opacity:.7;
+
+
+
+}
+
+.col2{
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+}
+
+@media screen and (max-width:1200px) {
+
+  .col1, .col2{width: 100%;}
+
+   #required li {   width:100%; }
+
+   .NAV li,.name{
+     float:left;
+     width: 50%;
+
+   }
+   li.NAV{
+     float: left;
+   }
+   .data{
+   margin-top:100px;
+  }
+   li.name{
+    font-size:30px;
+  }
+   body {background-repeat:repeat;
+        background-size:cover;}
+
+
+
+}
+
+
+p {
+  color:red;
+  text-align:center;
+}
+
+a{
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  color:black;
+}
+
+#required{text-align:center;}
+ #required li{display:inline-block; margin-right: 14px;}
+ #firstupper,#onedigit ,#special,#ch #space{ color:black; }
+
+ .RESTRICTIONS{
+   font-size: 15px;
+   color:red;
+
+ }
+
+</style>
+
+</head>
+<body>
+  <ul class="NAV">
+    <li class="name">THE TASTER</li>
+    <li class="NAV"><a href="index.html">Home</a></li>
+    <div class="restaurants_responsive">
+    <li class="NAV"><a class="active" href="registration.html">REGISTRATION</a></li>
+  </div>
+    <li class="NAV"><a  href="recipes.html">RECIPES</a></li>
+    <li class="NAV"><a href="channels.html">CHANNELS</a></li>
+    <li class="NAV"><a href="restaurants.html">RESTAURANTS</a></li>
+  </ul>
+<div class="data">
+  <form onsubmit="return validation()"  name="myForm" method="get">
+
+
+  <div class="row">
+    <div class="col1">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col2">
+      <input type="text" id="fname" name="firstName" placeholder="FIRST NAME" value="" required>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col1">
+      <label for="">Last Name</label>
+    </div>
+    <div class="col2">
+      <input type="text" id="lname" name="lastName" placeholder="LAST NAME" required>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col1">
+      <label for="">Email</label>
+    </div>
+    <div class="col2">
+      <input type="email" id="em" name="eMail" placeholder="EMAIL"
+        title="The email must be in the right form EX:jsmith@example.com" required>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col1">
+      <label for="">Phone Number</label>
+    </div>
+    <div class="col2">
+      <input type="text" id="phone" name="tNumber" maxlength="11" required >
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col1">
+      <label for="">Address</label>
+    </div>
+    <div class="col2">
+      <input type="text" id="add" name="address" placeholder="YOUR ADDRESS" required>
+    </div>
+  </div>
+
+  <div class="row" >
+    <div class="col1">
+      <label for="gender">Gender</label>
+    </div>
+    <div class="col2">
+      <input list="gender" name="gender" required>
+   <datalist id="gender">
+     <option value="Male">
+     <option value="Female">
+   </datalist>
+
+    </div>
+  </div>
+    <div class="row">
+      <div class="col1">
+        <label for="">Password</label>
+      </div>
+      <div class="col2">
+        <input type="password" id="pass" name="pass" 
+         placeholder="SET PASSWORD" title=" - The first letter should be capitalised
+          -The password must include : special characters - no spaces -one digit at least -characters at lest 8 " required>
+
+  </div>
+  <div id="required">
+    <ul id="req">
+      <li class="RESTRICTIONS">PASSWORD RESTRICTIONS</li>
+      <li id="firstupper">First upper</li>
+      <li id="special">Special characters</li>
+      <li id="onedigit">One digit</li>
+      <li id="ch">only 8 digits</li>
+      <li id="space">No spaces</li>
+    </ul>
+  </div>
+</div>
+
+<input type="submit" value="Submit">
+
+  </form>
+</div>
+
+<script src="main.js"></script>
+
+
+</body>
+</html>

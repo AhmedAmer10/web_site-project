@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width:100%;
+  border-radius: 10px;
+  border: 2px solid #73AD2;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-right:1px solid gray;
+  border-radius: 10px;
+  border: 2px solid #73AD2;
+}
+
+li a:hover{
+  background-color: #111;
+}
+
+.active {
+  background-color:gray;
+}
+li.name{
+  display:block;
+  margin-right: 50px;
+  margin-left:50px;
+  margin-top: 10px;
+  font-size:40px;
+  font-family:serif;
+  color:#FF005C;
+
+}
+div #home_img{
+  width:100%;
+  height:25%;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.column {
+  float: left;
+  width: 30.33%;
+  padding: 10px;
+  height: 400px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.footer {
+  padding: 30px;
+  font-size:4vw;
+  color:red;
+  height:100PX;
+  text-align: center;
+  background-color:#F1F2F2;
+
+
+}
+.text{
+text-align: center;
+font-size:20px;
+}
+div.row img {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 7px 7px grey;
+  margin-right: 50px;
+  width:100%;
+  height:300px;
+}
+div.row img:hover{
+  box-shadow: 20px 20px  grey;
+}
+
+
+@media screen and (max-width:1510px) and (min-width:1000px){
+
+  .nav1 li  ,.name{
+    float:left;
+    width: 50%;
+
+  }
+  div.row img{
+    width:100%;
+  }
+  .column {
+    float: left;
+    width: 19%;
+    padding: 10px;
+    height: 400px;
+    margin-left:100px;
+
+  }
+  div.row img {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 7px 7px grey;
+    width:100%;
+    height:200px;
+  }
+
+
+  .responsive{
+  margin-top:214px;
+  }
+
+
+
+
+
+
+}
+
+@media screen and (max-width:1000px) and (min-width: 0px) {
+  .nav1 li  ,.name{
+    float:left;
+    width: 50%;
+
+  }
+  .column {
+    width:100%;
+    padding: 0px;
+    height: 400px;
+    margin-left:0;
+    margin-right:0;
+
+  }
+
+  li.name{
+    font-size:30px;
+  }
+  .header{
+    font-size: 20px;
+  }
+  .responsive{
+  margin-top:214px;
+ }
+ div.row img{
+   width:90%;
+   margin-right:0;
+   margin-left: 10px;
+
+
+
+
+ }
+}
+
+
+</style>
+</head>
+<body>
+<div class="nav1">
+<ul >
+  <li class="name">THE TASTER</li>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="registration.html">REGISTRATION</a></li>
+  <li><a href="recipes.html">RECIPES</a></li>
+  <li><a href="channels.html">CHANNELS</a></li>
+  <li><a href="restaurants.html">RESTAURANTS</a></li>
+</ul>
+</div>
+<div class="responsive">
+<div>
+  <img id="home_img" src="index/home_img.png">
+</div>
+
+
+<div class="header">
+  <p>The TASTER is an egption wepsite for everything related to food : resturants,food recipes channels and food reviews allover the world</p>
+  <p>"In the wepsite you will find every thing to have a nice appetite" </p>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#F2F8FD;">
+   <div class="text">Delecious Recipes</div>
+   <img src="index/recipe 1.png"  >
+  </div>
+  <div class="column" style="background-color:#F2F8FD;">
+    <div class="text">Famous Restaurants and reviews</div>
+    <img src="index/feature_-_Main_hall_1.jpg"  ></div>
+  <div class="column" style="background-color:#F2F8FD;">
+    <div class="text">Food channels</div>
+    <img src="index/Chef.jpg"></div>
+</div>
+
+
+
+</div>
+<div class="footer">BON APPETIT !!</div>
+</div>
+</div>
+
+
+</body>
+
+
+</html>
