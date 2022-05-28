@@ -67,7 +67,7 @@ function validation() {
       checkvalid(valid);
     }
     var address = document.myForm.address.value;
-    if (tNumber == "") {
+    if (address == "") {
       formLabeles[4].innerHTML = "Address:[Required]";
       formLabeles[4].style.color = "red";
       valid = false;
